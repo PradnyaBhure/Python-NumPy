@@ -1,0 +1,20 @@
+# Check default data-type
+import numpy as np
+
+# create an array of  integers
+int_array = np.array([1,2,3,4,5])
+
+# check the data type of int_array
+print(int_array.dtype)  # int64
+
+# create an array of floating-point numbers
+float_array = np.array([1.1, 2.2, 3.3])
+
+# check the data type of float_array
+print(float_array.dtype)  # float64
+
+# create an array of complex numbers
+complex_array = np.array([1+3j, 4+5j, 2+4j])
+
+# check the data type of complex_array
+print(complex_array.dtype)  # complex128

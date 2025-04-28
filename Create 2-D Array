@@ -1,0 +1,63 @@
+# Task 2 -> Creating 2-D Array
+
+# Create a 2-D Array with array()
+sample_array1=np.array([[1,2,3,4],
+                        [5,6,7,8]])
+print(sample_array1)
+'''
+[[1 2 3 4]
+ [5 6 7 8]]   '''
+
+# Create a 2-D Array with zeros()
+sample_array2=np.zeros((2,3))
+print(sample_array2)
+
+'''
+[[0. 0. 0.]
+ [0. 0. 0.]]   '''
+
+# Create a 2-D Array with ones()
+sample_array3=np.ones((2,3))
+print(sample_array3)
+
+'''
+[[1. 1. 1.]
+ [1. 1. 1.]]  '''
+
+
+# Create a 2-D array with elements initialized to 3 
+sample_array4=np.full((2,2),3)
+print(sample_array4)
+
+'''
+[[3 3]
+ [3 3]]  '''
+
+# create an empty 2D array with 2 rows and 2 columns
+sample_array5=np.empty((2,2))
+print(sample_array5)
+
+''' 
+[[8.65721098e-312 2.91447100e+222]
+ [2.18174344e+243 2.25020976e+223]]  '''
+
+
+# create a 2D array of 2 rows and 2 columns of random numbers
+sample_array6=np.random.rand(2,2)
+print(sample_array6)
+
+'''
+[[0.09210981 0.22270719]
+ [0.68879592 0.29576238]] '''
+
+
+# create a 2D array using np.arange with np.reshape
+
+sample_array7=np.arange(6).reshape(2,3)
+print(sample_array7)
+
+'''
+[[0 1 2]
+ [3 4 5]] '''
+
+# creates a 2×3 array with values from 0 to 5

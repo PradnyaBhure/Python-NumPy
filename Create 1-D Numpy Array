@@ -1,0 +1,35 @@
+import numpy as np
+
+#Task 1 -> Numpy 1-D Array creation
+
+# Create an array using array() with list
+lst1=[1,2,3,4,5]
+sample_array1=np.array(lst1)
+print(sample_array1)  #[1 2 3 4 5]
+
+# Create an creation by directly passing list
+sample_array2=np.array([1,2,3,4,5])
+print(sample_array2) #[1 2 3 4 5]
+
+# Create an array by filling zeroes
+sample_array3=np.zeros(4)
+print(sample_array3)  #[0. 0. 0. 0.]
+
+# Create an array by filling ones
+sample_array4=np.ones(5)
+print(sample_array4)   #[1. 1. 1. 1. 1.]
+
+# Create an array using arange(start,stop,step)
+sample_array5=np.arange(5)
+print(sample_array5)   #[0 1 2 3 4]
+
+sample_array6=np.arange(1,10,2)
+print(sample_array6) #[1 3 5 7 9]
+
+# Create an Empty Array
+sample_array7=np.empty(4)
+print(sample_array7) #[0. 0. 0. 0.]
+
+# Create an Array With np.random.rand()
+sample_array8=np.random.rand(5)
+print(sample_array8) #[0.93646581 0.82510464 0.20750899 0.68111368 0.03632015]

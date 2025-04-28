@@ -1,0 +1,97 @@
+# Task 3 -> Creating 3-D Array
+
+# Create 3-D Array with array()
+sample_array1=np.array([[ [[1,2,3,4],
+                          [5,6,7,8],
+                          [1,2,3,4]],
+
+                         [[5,6,7,8],
+                          [9,3,6,2],
+                          [4,3,4,3]]
+
+                        ]])
+
+print(sample_array1)
+'''
+[[[[1 2 3 4]
+   [5 6 7 8]
+   [1 2 3 4]]
+
+  [[5 6 7 8]
+   [9 3 6 2]
+   [4 3 4 3]]]] '''
+
+# Create 3-D Array with zeros()
+sample_array2=np.zeros((2,3,4))
+print(sample_array2)
+
+'''
+[[[0. 0. 0. 0.]
+  [0. 0. 0. 0.]
+  [0. 0. 0. 0.]]
+
+ [[0. 0. 0. 0.]
+  [0. 0. 0. 0.]
+  [0. 0. 0. 0.]]]   '''
+
+# Create a 3-D Array with ones()
+sample_array3=np.ones((2,3,4))
+print(sample_array3)
+
+'''
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]
+
+ [[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]] '''
+
+# Create a 3-D array with elements initialized to 3 
+sample_array4=np.full((2,2,3),3)
+print(sample_array4)
+
+'''
+[[[3 3 3]
+  [3 3 3]]
+
+ [[3 3 3]
+  [3 3 3]]]  '''
+
+# create an empty 3-D array with 2x3x3
+sample_array5=np.empty((2,3,3))
+print(sample_array5)
+
+'''
+[[[1.54390028e-311 1.54376378e-311 1.69121096e-306]
+  [7.56602523e-307 7.56607277e-307 1.42419938e-306]
+  [7.56603881e-307 8.45603440e-307 3.56043054e-307]]
+
+ [[1.60219306e-306 6.23059726e-307 1.06811422e-306]
+  [3.56043054e-307 1.37961641e-306 9.45697982e-308]
+  [8.01097889e-307 1.42421160e-306 8.34446411e-308]]]  '''
+
+# create a 3D array of shape (2, 2, 2) of random numbers
+sample_array6 = np.random.rand(2, 2, 2)
+print(sample_array6)
+
+'''
+[[[0.72062963 0.08488372]
+  [0.39541198 0.71205927]]
+
+ [[0.0519977  0.28864662]
+  [0.85750713 0.5672641 ]]]
+'''
+
+# create a 3D array using np.arange() with np.reshape()
+sample_array7=np.arange(18).reshape(2,3,3)
+print(sample_array7)
+
+'''
+[[[ 0  1  2]
+  [ 3  4  5]
+  [ 6  7  8]]
+
+ [[ 9 10 11]
+  [12 13 14]
+  [15 16 17]]] '''

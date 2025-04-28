@@ -51,7 +51,7 @@ print(sample_array6)
  [0.68879592 0.29576238]] '''
 
 
-# create a 2D array using np.arange with np.reshape
+# create a 2D array using np.arange() with np.reshape()
 
 sample_array7=np.arange(6).reshape(2,3)
 print(sample_array7)

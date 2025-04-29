@@ -28,3 +28,10 @@ complex_array = np.array([1+3j, 4+5j, 2+4j])
 
 # check the data type of complex_array
 print(complex_array.dtype)  # complex128
+
+# Change data-Type 
+int_array=np.array([1,2,3,4,5])
+
+float_aaray=int_array.astype(float)
+print(float_aaray)   #[1. 2. 3. 4. 5.]
+

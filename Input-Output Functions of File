@@ -1,0 +1,45 @@
+# Numpy Input/Output Function 
+# to load and save data to and from files
+
+'''
+save()	saves an array to a binary file in the NumPy .npy format.
+load()	loads data from a binary file in the NumPy .npy format
+savetxt()	saves an array to a text file in a specific format
+loadtxt()	loads data from a text file.
+'''
+sample_array1=np.array([1,2,3,4,5])
+
+# .npy Format
+np.save('numpyfile1.npy',sample_array1)
+loaded_array1=np.load('numpyfile1.npy')
+print(loaded_array1) # [1 2 3 4 5]
+
+# Text Format
+np.savetxt('numpytxtfile1.txt',sample_array1)
+loaded_text_array1= np.loadtxt('numpytxtfile1.txt')
+print(loaded_text_array1)  #[1. 2. 3. 4. 5.]
+
+
+# 2-D Array 
+sample_array2=np.array([[1,2,3,4,5],
+                        [5,6,7,8,9]
+                       ])
+
+# .npy Format
+np.save('numpyfile2.npy',sample_array2)
+loaded_array2=np.load('numpyfile2.npy')
+print(loaded_array2)  
+
+'''
+[[1 2 3 4 5]
+ [5 6 7 8 9]] '''
+
+# Text Format
+np.savetxt('numpytxtfile2.txt',sample_array2)
+loaded_text_array2= np.loadtxt('numpytxtfile2.txt')
+print(loaded_text_array2)  
+
+'''
+[[1. 2. 3. 4. 5.]
+ [5. 6. 7. 8. 9.]]
+'''
